@@ -2,6 +2,13 @@
 *{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
+
+/* Root element adhere to DRY method */
+:root {
+    --mint-text: rgb(55, 168, 102);
+    --gray-tag: rgb(57, 53, 65);
+}
+
 /* set font sizes for these header sizes (necessary from css reset) */
 h1 {
     font-size: 50px;
@@ -15,6 +22,14 @@ h3 {
     font-size: 20px;
 }
 
+html {
+    min-width: 100%;
+}
+
+body {
+    min-width: 100%;
+}
+
 /* Element selector for header */
 
 header {
@@ -23,7 +38,6 @@ header {
     height: 100px;
     background-color: rgb(55, 168, 102);
     position: fixed;
-    color: rgb(73, 68, 68);
     display: flex;
     padding: 0px;
     align-items: center;
@@ -35,8 +49,7 @@ header {
 header h1 {
     background-color: rgb(57, 53, 65);
     padding: 10px 5px 10px 70px;
-    color: rgb(55, 168, 102);
-    
+    color: var(--mint-text);
 }
 
 /* Nav bar selectors */
@@ -45,7 +58,7 @@ nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    background-color: rgb(57, 53, 65);
+    background-color: var(--gray-tag);
     padding: 10px 35px 10px .25px;
     font-size: 20px;
 }
@@ -53,7 +66,7 @@ nav {
 
 nav a {
     padding: 10px;
-    color: rgb(55, 168, 102);
+    color: var(--mint-text);
 }
 
 nav a:hover {
@@ -70,9 +83,9 @@ a:link {
 #about-me {
     display: flex;
     justify-content: space-between;
-    padding: 120px 0px 20px;
+    padding: 110px 0px 10px;
     background-color: rgba(100, 233, 153, 0.788);
-    color: rgb(73, 68, 68);
+    color: var(--gray-tag);
     border: 20px;
 }
 
@@ -82,20 +95,23 @@ a:link {
     color: black;
     padding: 10px 5px 10px 70px;
     white-space: nowrap;
-    background-color: rgb(57, 53, 65);
-    color: rgba(100, 233, 153, 0.788);
+    height: 60px;
+    background-color: var(--gray-tag);
+    color: var(--mint-text);
 }
 
 #about-me img {
     border-radius: 100%;
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
+    padding: 0px;
+    box-shadow: 0px 0px 5px 5px rgba(38, 9, 70, 0.308);
+    margin-right: 20px;
 }
 
 #about-me p {
     width: 100%;
-    color: rgb(57, 53, 65);
+    color: var(--gray-tag);
     display: flex;
     align-items: center;
     padding: 20px;
@@ -107,26 +123,27 @@ a:link {
 #projects {
     background-color: rgba(38, 110, 67, 0.788);
     padding: 10px 0 0 0;
+    width: 100%;
 }
 
 #projects h2 {
-    color: rgba(52, 185, 108, 0.788);
+    color: var(--mint-text);
     padding: 10px 5px 10px 70px;
     width: 207px;
-    background-color: rgb(57, 53, 65);
+    background-color: var(--gray-tag);
 }
 
 #projects-container {
     display: flex;
     flex-direction: row;
-    padding: 10px;
+    padding: 1%;
 }
 
 #projects h3, #projects p {
     text-align: center;
     padding: 10px;
-    background-color: rgb(57, 53, 65);
-    color: rgba(52, 185, 108, 0.788);
+    background-color: var(--gray-tag);
+    color: var(--mint-text);
     width: 300px;
     margin: auto;
 }
@@ -144,30 +161,41 @@ a:link {
 }
 
 .big-project-card {
-    border: 5px solid rgb(57, 53, 65);
+    border: 5px solid var(--gray-tag);
     border-radius: 10%;
+    max-width: 100%;
     width: 900px;
     height: 700px;
     margin: 10px;
 }
 
-
 .project-card {
-    border: 5px solid rgb(57, 53, 65);
+    border: 5px solid var(--gray-tag);
     border-radius: 10%;
+    max-width: 100%;
     width: 400px;
     height: 340px;
     margin: 10px;
 }
 
+
+/* Adds hover effect to cards (changes border color, size, background color, and text color to inverted) */
 .project-card:hover {
-    background-size: 99% 77%;
-    color: yellow;
+    border: 7px solid var(--mint-text);
 }
 
 .big-project-card:hover {
-    background-size: 99% 77%;
-    color: yellow;
+    border: 7px solid var(--mint-text);
+}
+
+.big-project-card:hover p, .big-project-card:hover h3 {
+    color: var(--gray-tag) !important;
+    background-color: var(--mint-text) !important;
+}
+
+.project-card:hover p, .project-card:hover h3 {
+    color: var(--gray-tag) !important;
+    background-color: var(--mint-text) !important;
 }
 
 /* Portfolio images */
@@ -200,7 +228,7 @@ address {
 }
 
 address a {
-    color: rgb(55, 168, 102);
+    color: var(--mint-text);
     padding: 40px;
     font-size: 25px;
 }
@@ -213,15 +241,62 @@ address a:hover {
 #contact h2 {
     padding: 10px 5px 10px 70px;
     width: 250px;
-    background-color: rgb(57, 53, 65);
-    color: rgb(51, 184, 104);
+    background-color: var(--gray-tag);
+    color: var(--mint-text);
 }
 
 /* Footer element selector */
 
 footer {
     background-color: rgba(18, 51, 31, 0.788);
+    color: var(--gray-tag);
 }
+
+/* Media queries */
+
+@media screen and (max-width: 980px) {
+    #projects-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    }
+    
+    .card-column {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    address {
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    address a {
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .card-column {
+        flex-direction: column;
+    }
+    .big-project-card {
+        border: 5px solid var(--gray-tag);
+        border-radius: 10%;
+        width: 800px;
+        height: 700px;
+        margin: 10px;
+    }
+
+    /* address {
+        
+    } */
+
+}
+    
+
 
 
 
