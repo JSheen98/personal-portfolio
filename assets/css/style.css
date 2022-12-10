@@ -1,7 +1,8 @@
+/* set font family for all elements */
 *{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
-
+/* set font sizes for these header sizes (necessary from css reset) */
 h1 {
     font-size: 50px;
 }
@@ -13,6 +14,8 @@ h2 {
 h3 {
     font-size: 20px;
 }
+
+/* Element selector for header */
 
 header {
     text-align: start;
@@ -27,12 +30,16 @@ header {
     justify-content: space-between;
 }
 
+/* header h1 (title) selector */
+
 header h1 {
     background-color: rgb(57, 53, 65);
     padding: 10px 5px 10px 70px;
     color: rgb(55, 168, 102);
     
 }
+
+/* Nav bar selectors */
 
 nav {
     display: flex;
@@ -43,15 +50,22 @@ nav {
     font-size: 20px;
 }
 
+
 nav a {
     padding: 10px;
     color: rgb(55, 168, 102);
+}
+
+nav a:hover {
+    background-size: 99% 77%;
+    color: white;
 }
 
 a:link { 
     text-decoration: none; 
 }
 
+/* about me id selectors */
 
 #about-me {
     display: flex;
@@ -88,28 +102,39 @@ a:link {
     font-weight: bold;
 }
 
+/* 'Projects' section class and id selectors */
+
 #projects {
-    padding: 10px;
+    background-color: rgba(38, 110, 67, 0.788);
+    padding: 10px 0 0 0;
 }
 
 #projects h2 {
-    padding: 10px;
+    color: rgba(52, 185, 108, 0.788);
+    padding: 10px 5px 10px 70px;
+    width: 207px;
+    background-color: rgb(57, 53, 65);
 }
 
 #projects-container {
     display: flex;
     flex-direction: row;
     padding: 10px;
-    
 }
 
-#projects h3, p {
+#projects h3, #projects p {
     text-align: center;
     padding: 10px;
+    background-color: rgb(57, 53, 65);
+    color: rgba(52, 185, 108, 0.788);
+    width: 300px;
+    margin: auto;
 }
 
 #projects p {
-    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    
 }
 
 .card-column {
@@ -119,8 +144,8 @@ a:link {
 }
 
 .big-project-card {
-    border: 1px solid green;
-    border-radius: 5%;
+    border: 5px solid rgb(57, 53, 65);
+    border-radius: 10%;
     width: 900px;
     height: 700px;
     margin: 10px;
@@ -128,12 +153,79 @@ a:link {
 
 
 .project-card {
-    border: 1px solid blue;
-    border-radius: 5%;
+    border: 5px solid rgb(57, 53, 65);
+    border-radius: 10%;
     width: 400px;
     height: 340px;
     margin: 10px;
 }
+
+.project-card:hover {
+    background-size: 99% 77%;
+    color: yellow;
+}
+
+.big-project-card:hover {
+    background-size: 99% 77%;
+    color: yellow;
+}
+
+/* Portfolio images */
+
+.stock-image {
+    background-image: url(../images/graph-market-thinkstock.jpg);
+    background-size: 100%;
+}
+
+
+.challenge-1 {
+    background-image: url(../images/horiseon-website.png);
+    background-size: 110%;
+}
+
+.prework-study-guide {
+    background-image: url(../images/jsheen98.github.io_prework-study-guide_.png);
+    background-size: 100%;
+}
+
+/* Contact section id and element selectors */
+
+#contact {
+    padding: 10px 0 30px 0;
+    background-color: rgba(18, 51, 31, 0.788);
+}
+
+address {
+    padding: 50px;
+}
+
+address a {
+    color: rgb(55, 168, 102);
+    padding: 40px;
+    font-size: 25px;
+}
+
+address a:hover {
+    background-size: 99% 77%;
+    color: white;
+}
+
+#contact h2 {
+    padding: 10px 5px 10px 70px;
+    width: 250px;
+    background-color: rgb(57, 53, 65);
+    color: rgb(51, 184, 104);
+}
+
+/* Footer element selector */
+
+footer {
+    background-color: rgba(18, 51, 31, 0.788);
+}
+
+
+
+
 
 
 
