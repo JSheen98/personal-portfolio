@@ -51,6 +51,15 @@ N/A
 ## Deployed Application
 
 The deployed application can be found at this link:
+https://jsheen98.github.io/coding-bootcamp-challenge-2/
+
+
+## Assets
+
+The following image demonstrates the website's appearance:
+
+![Porfolio Website Image](./assets/images/coding-challenge-2-website.png)
+
 
 
 ## License
