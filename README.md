@@ -51,7 +51,7 @@ N/A
 ## Deployed Application
 
 The deployed application can be found at this link:
-https://jsheen98.github.io/coding-bootcamp-challenge-2/
+https://jsheen98.github.io/coding-bootcamp-challenge-personal-portfolio/
 
 
 ## Assets
