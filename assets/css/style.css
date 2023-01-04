@@ -228,6 +228,18 @@ a:link {
     background-size: 100%;
 }
 
+.password-generator {
+    background-image: url(../images/password-generator-screenshot.png);
+    background-size: 135%;
+    background-position: center center;
+}
+
+.code-quiz {
+    background-image: url(../images/code-quiz-portfolio.png);
+    background-size: cover;
+    background-position: top center;
+}
+
 /* Brand Logos */
 
 .github {
