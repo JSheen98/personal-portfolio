@@ -211,9 +211,12 @@ a:link {
 
 /* Portfolio images */
 
-.stock-image {
-    background-image: url(../images/graph-market-thinkstock.jpg);
-    background-size: 100%;
+.movie-recommender {
+    background-image: url(../images/movie-recommender-ss.jpg);
+    background-size: cover;
+    background-position: top right;
+    /* background-repeat: no-repeat; */
+    /* background-size: 170%; */
 }
 
 
@@ -338,8 +341,7 @@ footer {
 @media screen and (max-width: 590px) {
 
     header {
-        flex-direction: column;
-        
+        flex-direction: column;    
     }
 
      header h1{
