@@ -1,5 +1,5 @@
 /* set font family for all elements */
-*{
+* {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
@@ -74,8 +74,8 @@ nav a:hover {
     color: white;
 }
 
-a:link { 
-    text-decoration: none; 
+a:link {
+    text-decoration: none;
 }
 
 /* about me id selectors */
@@ -144,7 +144,8 @@ a:link {
     padding: 1%;
 }
 
-#projects h3, #projects p {
+#projects h3,
+#projects p {
     text-align: center;
     padding: 10px;
     background-color: var(--gray-tag);
@@ -156,7 +157,7 @@ a:link {
 #projects p {
     display: flex;
     justify-content: center;
-    
+
 }
 
 .card-column {
@@ -199,12 +200,14 @@ a:link {
     border: 7px solid var(--mint-text);
 }
 
-.big-project-card:hover p, .big-project-card:hover h3 {
+.big-project-card:hover p,
+.big-project-card:hover h3 {
     color: var(--gray-tag) !important;
     background-color: var(--mint-text) !important;
 }
 
-.project-card:hover p, .project-card:hover h3 {
+.project-card:hover p,
+.project-card:hover h3 {
     color: var(--gray-tag) !important;
     background-color: var(--mint-text) !important;
 }
@@ -215,8 +218,6 @@ a:link {
     background-image: url(../images/movie-recommender-ss.jpg);
     background-size: cover;
     background-position: top right;
-    /* background-repeat: no-repeat; */
-    /* background-size: 170%; */
 }
 
 
@@ -300,11 +301,12 @@ footer {
         justify-content: center;
 
     }
+
     .card-column-2 {
         flex-direction: row;
 
     }
-    
+
 }
 
 @media screen and (max-width: 1367px) {
@@ -320,10 +322,11 @@ footer {
         align-items: center;
     }
 
-    .card-column, .card-column-2 {
+    .card-column,
+    .card-column-2 {
         flex-direction: column;
     }
-    
+
 }
 
 @media screen and (max-width: 796px) {
@@ -341,10 +344,10 @@ footer {
 @media screen and (max-width: 590px) {
 
     header {
-        flex-direction: column;    
+        flex-direction: column;
     }
 
-     header h1{
+    header h1 {
         background-color: var(--mint-text);
         color: var(--gray-tag);
         padding: 10px 0 0 0;
@@ -354,7 +357,7 @@ footer {
         background-color: var(--mint-text);
         padding: 10px 0;
     }
-    
+
     header nav a {
         color: var(--gray-tag);
         font-weight: bold;
@@ -366,8 +369,8 @@ footer {
         flex-direction: column;
     }
 
-    #about-me img{
-        
+    #about-me img {
+
         align-self: center;
     }
 
@@ -391,22 +394,12 @@ footer {
 
 @media screen and (max-width: 446px) {
     .project-card {
-    width: 330px;
-    height: 240px;
+        width: 330px;
+        height: 240px;
     }
 
     .big-project-card {
         height: 330px;
     }
-    
+
 }
-
-
-
-
-
-
-
-
-
-
