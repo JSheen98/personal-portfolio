@@ -238,6 +238,12 @@ a:link {
     background-position: center center;
 }
 
+.musinion {
+    background-image: url(../images/musinion.herokuapp.com_.png);
+    background-size: cover;
+    background-position: top left;
+}
+
 .code-quiz {
     background-image: url(../images/code-quiz-portfolio.png);
     background-size: cover;
