@@ -154,10 +154,23 @@ a:link {
     margin: auto;
 }
 
-#projects p {
+#parent .hidden {
+    display: none;
+    justify-content: center;
+}
+
+#parent .show {
     display: flex;
     justify-content: center;
+}
 
+#parent:hover .hidden {
+    display: flex;
+}
+
+#parent:hover .show {
+    display: none;
+    
 }
 
 .card-column {
@@ -299,6 +312,15 @@ footer {
     background-color: rgba(18, 51, 31, 0.788);
     color: var(--gray-tag);
 }
+
+
+/* #hidden {
+    display: none;
+} */
+
+/* #show:hover + #hidden{
+    display: flex;
+} */
 
 /* Media queries */
 
